@@ -1,4 +1,6 @@
-namespace .
+using System;
+
+namespace MathGame
 {
     public class MathGameLogic
     {
@@ -6,15 +8,15 @@ namespace .
 
         public void ShowMenu()
         {
-            System.Console.WriteLine("Please enter an option to select the operation you want to perform");
-            System.Console.WriteLine( "1. Summation");
-            System.Console.WriteLine("2. Subtraction");
-            System.Console.WriteLine("3. Multiplication");
-            System.Console.WriteLine("4. Division");
-            System.Console.WriteLine("5. Random Mode");
-            System.Console.WriteLine("6. Show History");
-            System.Console.WriteLine("7. Change difficulty");
-            System.Console.WriteLine("8. Exit");
+            Console.WriteLine("Please enter an option to select the operation you want to perform");
+            Console.WriteLine( "1. Summation");
+            Console.WriteLine("2. Subtraction");
+            Console.WriteLine("3. Multiplication");
+            Console.WriteLine("4. Division");
+            Console.WriteLine("5. Random Mode");
+            Console.WriteLine("6. Show History");
+            Console.WriteLine("7. Change difficulty");
+            Console.WriteLine("8. Exit");
         }
         public int MathOperation(int firstNumber, int secondNumber, char operation)
         {
@@ -31,7 +33,7 @@ namespace .
                             System.Console.WriteLine("Please enter a number between 0 and 100.");
                             firstNumber = Convert.ToInt32(Console.ReadLine());
                         }
-                        catch (System.Exception)
+                        catch (Exception)
                         {
 
                         }                   
