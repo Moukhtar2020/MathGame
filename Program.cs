@@ -113,10 +113,6 @@ while(!gameOver)
     }
 }
 
-
-
-
-
 static difficultyLevel ChangeDifficultyLevel()
 {
     int userSelection = 0;
@@ -143,16 +139,11 @@ static difficultyLevel ChangeDifficultyLevel()
     return difficultyLevel.easy;
 }
 
-public enum difficultyLevel
-{
-    easy = 45, 
-    Medium = 30,
-    Hard = 15
-}
+
 
 static void DisplayMathGameQuestion(int firstNumber, int secondNumber, char operation)
 {
-    Console.WriteLine($"{firstNumber} {operation} {secondNumber} = ??");
+    System.Console.WriteLine($"{firstNumber} { operation} {secondNumber} = ??");
 }
 
 static int GetUserMenuSelection(MathGameLogic mathGame)
@@ -230,4 +221,9 @@ static async Task<int?> GetUserResponse(difficultyLevel difficulty)
         return score;
 
     }
-
+public enum difficultyLevel
+{
+    easy = 45, 
+    Medium = 30,
+    Hard = 15
+}
