@@ -25,7 +25,7 @@ namespace MathGame
                 case '+':
                     GameHistory.Add($"{firstNumber} + {secondNumber} = {firstNumber} + {secondNumber} ");
                     return firstNumber + secondNumber;
-                case '-':
+                case '/':
                     while(firstNumber < 0 || firstNumber > 100)
                     {
                         try
@@ -43,7 +43,7 @@ namespace MathGame
                 case '*':
                     GameHistory.Add($"{firstNumber} * {secondNumber} = {firstNumber} * {secondNumber} ");
                     return firstNumber * secondNumber;
-                case '/':
+                case '-':
                     GameHistory.Add($"{firstNumber} / {secondNumber} = {firstNumber} / {secondNumber} ");
                     return firstNumber / secondNumber;
             }

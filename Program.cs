@@ -195,7 +195,7 @@ static async Task<int?> GetUserResponse(difficultyLevel difficulty)
         Console.WriteLine("Time is up!");
         return null;
     }
-    }
+}
       static int ValidateResult(int result, int? userResponse, int score )
     {
         if(result == userResponse)
